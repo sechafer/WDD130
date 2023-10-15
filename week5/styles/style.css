@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #03045e   ;
+    --secondary-color: #0077b6 ;
+    --accent1-color: #00b4d8;
+    --accent2-color: white;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Roboto";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #396E94;
+  }
+  
+/* CSS */
+
+
+#content {
+    max-width:1600px;
+    margin:0 auto;
+}
+
+nav a{
+    text-align:center;
+    color:#000;
+    text-decoration:none;
+    padding: 35px;
+
+}
+nav {
+    background-color:#D4AC0D;
+    display: flex;
+    justify-content: space-around; 
+}
+#background {
+    height:725px;
+    background-color: #396E94 ;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.book,.join {
+    background-color:#D4AC0D;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border: 5px;
+    border-radius: 5px;
+    
+}
+.rivers-card, .camping-card, .rapids-card  {
+    margin: 200px 0;} 
+
+.card-img {
+
+    border: 10px solid #0000;
+}    
+main section img {
+    box-sizing: border-box;
+}
+footer {
+    background-color:#396E94;
+    color:#000;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color:#000;
+    text-decoration:none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color:#FFF;
+}
+
+
+
+header {
+    background-color:#396E94;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+body {
+    background-color: #FFF;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.logo {
+width:80px;
+}
+.home-title {
+    color:#396E94;
+    font-family: 'Kalam', 'Bradley Hand', 'sans-serif';
+    font-size: 2em;;
+    margin-top: 10px;
+}
+.msg {
+    background-color:#396E94;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    padding-bottom: 15px;}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
