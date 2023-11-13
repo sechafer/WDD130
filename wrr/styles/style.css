@@ -263,7 +263,41 @@ footer .social img {
   }
 
 
+.aboutus-grid .question {
+  grid-column: 1 / 4;
+}
 
+.aboutus-grid .question:nth-child(4) {
+  grid-row: 2;
+  grid-column: 2 / 4;
+}
+
+.aboutus-grid .question:nth-child(5) {
+  grid-row: 2;
+  grid-column: 3 / 4;
+}
+
+.question{
+    background: #396E94;
+    margin: 70px;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+
+.aboutus-grid .question h3  {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.aboutus-grid .question p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.aboutus-grid .question li {
+    font-size: 14px;
+    padding: 5px;
+}
 
 
 .question{
