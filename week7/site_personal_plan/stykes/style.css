@@ -1,0 +1,129 @@
+/* Reset de estilos para evitar inconsistencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-top: 20px;
+}
+
+article.question {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.footer nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.social img {
+    max-width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+/* Contact form */
+
+.contact-form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #CAF0F8;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+/* Specific changes for the contact page */
+
+.contact-form h2 {
+    text-align: center;
+}
