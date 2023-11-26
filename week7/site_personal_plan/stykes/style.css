@@ -1,87 +1,100 @@
-/* Reset de estilos para evitar inconsistencias entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #8AB0AA;
+  --secondary-color: #26413B;
+  --accent1-color: #8AB0AA;
+  --accent2-color: #FFF;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Kalam;
+  --paragraph-font: Poppins, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #000;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #8AB0AA; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #FFF; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #8AB0AA;
+  --nav-link-color: #000;
+  --nav-background-color: #8AB0AA;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #26413B;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
+/* CSS */
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+#content {
+    max-width:1600px;
+    margin:0 auto;
 }
 
 nav a {
-    margin: 0 15px;
-    color: white;
+    text-align: center;
+    color: #FFF;
     text-decoration: none;
+    padding: 35px;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+nav {
+    background-color: #26413B;
+    display: flex;
+    justify-content: space-around; 
+    align-content: center;
+    align-items: center;
 }
 
-h1, h2, h3 {
-    color: #333;
+header a:hover {
+    color: #8AB0AA;
+    text-emphasis-style: var(--nav-background-color);
 }
 
-img.logo {
-    max-width: 100%;
-    height: auto;
+.logo {
+    width: 50px;
 }
 
-section {
-    margin-top: 20px;
+#background {
+    height: 725px;
+    background-color: #8AB0AA;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
-article.question {
-    margin-bottom: 20px;
+header #logo_link {
+    background-color: #26413B;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer nav {
+    background-color: #26413B;
+    color: #000;
+    padding: 25px 50px;
+    margin-top: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 5px;
 }
 
-.footer nav a {
-    margin: 0 15px;
-    color: white;
+footer a {
+    color: #FFF;
     text-decoration: none;
 }
 
-.social img {
-    max-width: 30px;
-    height: auto;
-    margin: 0 5px;
+#content > footer > p:nth-child(1) {
+    color: #FFF;
 }
 
-/* Contact form */
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #FFF;
+}
 
 .contact-form {
     max-width: 960px;
@@ -98,7 +111,7 @@ footer {
 }
 
 .contact-form input[type="submit"] {
-    background-color: #CAF0F8;
+    background-color: #8AB0AA;
     color: #000;
     font-weight: bold;
     cursor: pointer;
@@ -118,12 +131,56 @@ footer {
     /* make this element invisible until we are ready for it */
     display: none;      
 }
+
 .moveDown {
     margin-top: 3em;
 }
 
-/* Specific changes for the contact page */
+#content {
+    max-width: 1600px;
+    margin: 0 auto; /* Centra el bloque en el eje horizontal */
+    text-align: center; /* Centra los elementos en línea (como texto) */
+}
 
-.contact-form h2 {
+/* Specific changes for the home section grid */
+.home-grid {
+    align-items: center;
+    text-align: center; /* Centra los elementos en línea (como texto) */
+}
+.home-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto; /* Centra el bloque en el eje horizontal */
+    max-width: calc(2/3 * 100%); /* Limita al 2/3 del ancho del #content */
+}
+
+.home-section article {
+    border: 1px solid #ccc;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+}
+
+.home-section img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+.home-section p {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+#anlitics1 > img {
+    width: 100px;
+}
+.home_1 {
+    max-width: calc(2/3 * 100%); /* Limita al 2/3 del ancho del #content */
+    margin: 0 auto; /* Centra el bloque en el eje horizontal */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.home_1 img {
+    display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 20em;
 }
