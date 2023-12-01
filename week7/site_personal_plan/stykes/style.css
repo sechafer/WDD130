@@ -65,6 +65,13 @@ header #logo_link {
     background-color: #26413B;
 }
 
+#content > main > div > h1 {
+    text-align: center;
+}
+#content > main > div > h1 {
+    text-align: center;
+    align-items: center;
+}
 footer {
     background-color: #26413B;
     color: #000;
@@ -183,4 +190,69 @@ footer a:hover {
     display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     width: 20em;
+}
+
+
+/* add component week 12 */
+
+body {
+    margin: 0;
+    background-color: var(--accent2-color);
+    font-family: var(--heading-font);
+}
+
+#navbar {
+    background-color: #26413B;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 85%;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+    transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+    overflow: hidden; /* Añadido para ocultar el contenido que sobresale */
+}
+
+#navbar a {
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px; /* Reducí el padding para un diseño más compacto */
+    display: block;
+}
+
+#navbar a:hover {
+    color: #8AB0AA;
+}
+
+#navbar img.logo {
+    max-height: 100%; /* Asegura que la imagen no sobresalga del contenedor */
+    opacity: 1; /* Opacidad original */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#content {
+    padding-top: 70px; /* Añade espacio al contenido para evitar que se solape con el navbar fijo */
+}
+
+/* Aplica estilos transparentes y desplazamiento cuando se hace scroll */
+body.scrolled #navbar {
+    background-color: rgba(38, 65, 59, 0.8); /* Cambia el color de fondo con transparencia */
+    height: 70px; /* Ajusta la altura al tamaño original */
+}
+
+body.scrolled:not(:hover) #navbar {
+    background-color: rgba(38, 65, 59, 0.5); /* Cambia la opacidad cuando no se está hover */
+    overflow: hidden; /* Añadido para ocultar el contenido que sobresale */
+}
+
+body.scrolled #navbar img.logo {
+    opacity: 0.8; /* Ajusta la opacidad de la imagen cuando se hace scroll */
+}
+
+/* Estilo para el footer, para asegurarse de que sea visible incluso cuando se ha hecho scroll */
+footer {
+    margin-top: 50px;
 }

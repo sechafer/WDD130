@@ -7,11 +7,12 @@
     <link type="text/css" rel="stylesheet" href="stykes/style.css">
 </head>
 <body>
+
     <div id="content">
     
     <header>
         
-        <nav>
+        <nav id="navbar">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="logo del site Fernandez">
             </a>
@@ -91,5 +92,20 @@ The ads created can be published in different formats and channels, and not just
 </nav>
     </footer>
 </div>    
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            var body = document.querySelector("body");
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                body.classList.add("scrolled");
+            } else {
+                body.classList.remove("scrolled");
+            }
+        });
+    });
+</script>
 </body>
 </html>
