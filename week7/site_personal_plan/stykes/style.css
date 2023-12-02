@@ -291,7 +291,7 @@ body.scrolled #navbar img.logo {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/images/faq2.png') center/cover no-repeat;
+    background: url('images/faq2.png') center/cover no-repeat;
     opacity: 0.7; /* Ajusta la opacidad de la imagen de fondo */
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
