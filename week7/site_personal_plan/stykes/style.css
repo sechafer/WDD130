@@ -194,6 +194,15 @@ footer a:hover {
     width: 20em;
 }
 
+#content > main > section > img{
+    display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 40em;
+}
+
+#content > main > section > picture > img{   display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 10em;}
 
 /* add component week 12 */
 
@@ -258,9 +267,86 @@ body.scrolled #navbar img.logo {
     opacity: 0.8; /* Ajusta la opacidad de la imagen cuando se hace scroll */
 }
 
-/* Estilo para el footer, para asegurarse de que sea visible incluso cuando se ha hecho scroll */
-footer {
-    margin-top: 50px;
+/* Agrega un estilo común para todos los artículos con imagen de fondo */
+.question {
+    position: relative;
+    color: #000; /* Color del texto sin transparencia */
+    padding: 20px;
+    margin-bottom: 20px; /* Agrega un espacio entre los artículos */
+}
+
+/* Establece la imagen de fondo y ajusta el tamaño */
+#question1,
+#question2,
+#question3 {
+    position: relative;
+}
+
+#question1::before,
+#question2::before,
+#question3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/faq2.png') center/cover no-repeat;
+    opacity: 0.7; /* Ajusta la opacidad de la imagen de fondo */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Ajusta el estilo del texto dentro de cada artículo si es necesario */
+.question h3,
+.question p {
+    z-index: 1; /* Asegura que el texto esté en la parte superior del fondo transparente */
+}
+
+/* Ajusta el estilo del texto dentro de cada artículo si es necesario */
+.question h3 {
+    color: #000; /* Ajusta el color del título según tus preferencias */
+}
+
+.question p {
+    color: #000; /* Ajusta el color del texto según tus preferencias */
 }
 
 
+ article.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+ article.contact-info li {
+    margin-bottom: 10px;
+    color: #000; /* Color del texto de la información de contacto */
+}
+
+ article.contact-info li a {
+    color: #000; /* Color de los enlaces de la información de contacto */
+    text-decoration: none;
+}
+
+article.contact-info a.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* Color de fondo del botón de WhatsApp */
+    color: #fff; /* Color del texto del botón de WhatsApp */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+ article.contact-info a.whatsapp-button:hover {
+    background-color: #128C7E; /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
+}
+
+#content > main > div:nth-child(3) > img {
+    display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 20em;}
+
+    #content > main > article > img{
+        display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        width: 20em;}   
