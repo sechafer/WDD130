@@ -6,6 +6,8 @@
   --secondary-color: #26413B;
   --accent1-color: #8AB0AA;
   --accent2-color: #FFF;
+  --heading-font: 'Kalam', Arial, sans-serif;
+  --paragraph-font: 'Poppins', Helvetica, sans-serif;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Kalam;
@@ -24,6 +26,19 @@
 }
 
 /* CSS */
+
+body{
+    font-family: var(--heading-font);
+
+}
+h1 {
+    font-family: var(--heading-font);
+  }
+  
+  p {
+    font-family: var(--paragraph-font);
+  }
+
 
 #content {
     max-width:1600px;
