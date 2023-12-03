@@ -47,7 +47,7 @@ nav {
 
 header a:hover {
     color: #8AB0AA;
-    text-emphasis-style: var(--nav-background-color);
+   
 }
 
 .logo {
