@@ -224,8 +224,15 @@ footer a:hover {
     width: 20em;
 }
 
+#content > main > section:nth-child(1) > img{
+    width: 25em;
+    display: block;
+    margin: 0 auto;
+}
 
-
+#content > main > section:nth-child(1) > picture > img{
+    width: 8em;
+}
 
 /* Estilo para la clase 'contact-photo' */
 .contact-photo {
