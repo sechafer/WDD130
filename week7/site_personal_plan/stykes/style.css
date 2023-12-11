@@ -420,6 +420,7 @@ article.contact-info a.whatsapp-button {
 
  article.contact-info a.whatsapp-button:hover {
     background-color: #c98c2b; /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
+    color: var(--nav-hover-background-color);
 }
 
 #content > main > div:nth-child(3) > img {
