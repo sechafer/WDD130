@@ -18,6 +18,7 @@
                 <a href="faq.html">FAQ</a>
                 <a href="about-us.html">About Us</a>
             </nav>
+            <button id="contraste" onclick="toggleAccessibility()">֍</button>
         </header>
         <main>
             <section>
@@ -61,7 +62,7 @@
         <footer>
             <p>advertise you business © 2023 - Samuel Chacon </p> 
             <nav> 
-                <a href="#contact-us">Contact Us</a>
+                <a href="about-us.html">About Us</a>
                 <a href="site-plan.html" target="_blank">Site plan</a>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
@@ -76,6 +77,11 @@
                 </div>
             </nav>
         </footer>
+        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+        <a id="robbu-whatsapp-button" class="rigth" target="_blank" href="https://api.whatsapp.com/send?phone=5511933880101&text=Hello">
+          <div class="rwb-tooltip">Whatsapp</div>
+          <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+        </a>  
 
     </div>    
 <script>
@@ -92,5 +98,39 @@
         });
     });
 </script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Función para activar/desactivar características de accesibilidad
+      function toggleAccessibility() {
+        // Cambiar la clase del body para activar/desactivar estilos de alto contraste
+        document.body.classList.toggle('highContrast');
+    
+        // Puedes agregar más lógica aquí, dependiendo de las características que quieras activar/desactivar
+        // Por ejemplo, cambiar el tamaño del texto, ajustar espaciado, etc.
+      }
+    
+      // Esta función se llama cuando se carga la página para aplicar el estilo inicial según la configuración del usuario
+      function applyAccessibilityStyles() {
+        const isHighContrast = localStorage.getItem('highContrast') === 'true';
+    
+        if (isHighContrast) {
+          document.body.classList.add('highContrast');
+        }
+      }
+    
+      // También puedes agregar otros eventos o lógica aquí si es necesario
+    
+      // Agrega el evento click al botón después de que se cargue el DOM
+      const contrastButton = document.getElementById('contraste');
+      if (contrastButton) {
+        contrastButton.addEventListener('click', toggleAccessibility);
+      }
+    
+      // Aplica estilos de accesibilidad al cargar la página
+      applyAccessibilityStyles();
+    });
+      
+      </script>
 </body>
 </html>

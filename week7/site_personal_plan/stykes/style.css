@@ -21,9 +21,32 @@
   --nav-background-color: #8AB0AA;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #26413B;
+
+
+   /* Tamaños de fuente para una mejor legibilidad */
+   --heading-font-size: 1.5em; /* Ajusta según sea necesario */
+   --paragraph-font-size: 0.9em; /* Ajusta según sea necesario */
 }
 
+
+
 /* CSS */
+
+body {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+}
+
 
 body{
     font-family: var(--heading-font);
@@ -84,7 +107,17 @@ header #logo_link {
 #content > main > div > h1 {
     text-align: center;
     align-items: center;
+
 }
+
+#content > main > div > p{
+    text-align: justify;
+}
+
+#ads1 > ul{
+text-align:justify ;
+}
+
 footer {
     background-color: #26413B;
     color: #000;
@@ -207,7 +240,7 @@ footer a:hover {
     align-items: center;
 }
 .home-section p {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: justify; /* Alinea el texto a la izquierda */
 }
 
 #anlitics1 > img {
@@ -233,6 +266,8 @@ footer a:hover {
 #content > main > section:nth-child(1) > picture > img{
     width: 8em;
 }
+
+
 
 /* Estilo para la clase 'contact-photo' */
 .contact-photo {
@@ -324,6 +359,7 @@ body.scrolled #navbar img.logo {
 #question2,
 #question3 {
     position: relative;
+    text-align: justify;
 }
 
 #question1::before,
@@ -343,6 +379,7 @@ body.scrolled #navbar img.logo {
 /* Ajusta el estilo del texto dentro de cada artículo si es necesario */
 .question h3,
 .question p {
+    text-align: justify;
     z-index: 1; /* Asegura que el texto esté en la parte superior del fondo transparente */
 }
 
@@ -388,12 +425,12 @@ article.contact-info a.whatsapp-button {
 #content > main > div:nth-child(3) > img {
     display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
     margin: 0 auto; /* Centra la imagen horizontalmente */
-    width: 20em;}
+    width: 18em;}
 
     #content > main > article > img{
         display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        width: 20em;}   
+        width: 18em;}   
 
 .back-info{
     background-color: rgba(138, 176, 170, 0.3) ;
@@ -420,3 +457,72 @@ article.contact-info a.whatsapp-button {
     padding: 10px; /* Ajusta el espacio interno */
     border: 1px solid #ccc; /* Añade un borde para mayor claridad */
 }
+
+#contactForm > label{
+    text-align: left;
+}
+#contactForm {
+    align-items: baseline;
+    text-align: left;
+}
+#contactForm > input[type=submit]:nth-child(7):hover{
+    color: #FFF;
+}
+#content > main > div.back-info > article > ul > li> a:hover{
+    color: yellowgreen;
+}
+
+/* Estilos para alta contraste */
+body.highContrast {
+    background-color: black; /* Cambia el color de fondo a blanco */
+    color: white; /* Cambia el color del texto a negro */
+}
+
+/* ... Otras reglas de estilo ... */
+
+/* Ajusta los estilos según las pautas de accesibilidad */
+body.highContrast h1,
+body.highContrast h2,
+body.highContrast h3,
+body.highContrast h4,
+body.highContrast h5,
+body.highContrast h6 {
+    color: #FFF; /* Ajusta el color del texto del encabezado en alta contraste */
+}
+
+body.highContrast p {
+    color: #FFF; /* Ajusta el color del texto del párrafo en alta contraste */
+}
+
+body.highContrast a  {
+    color: #FFF; /* Ajusta el color del texto del enlace en alta contraste */
+}
+body.highContrast li a  {
+    color: #FFF; /* Ajusta el color del texto del enlace en alta contraste */
+}
+
+body.highContrast li   {
+    color: #FFF; /* Ajusta el color del texto del enlace en alta contraste */
+}
+#contraste {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+body #contraste{
+    color: #FFF;
+    background-color: #000;
+    font-size: 1em;
+    border-radius: 25%;
+}
+
+
+body.highContrast #contraste{
+    color: #000;
+    background-color: #FFF;
+    font-size: 1em;
+    border-radius: 25%;
+}
+

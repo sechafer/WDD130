@@ -20,13 +20,14 @@
             <a href="faq.html">FAQ</a>
             <a href="about-us.html">About Us</a>
         </nav>
+        <button id="contraste" onclick="toggleAccessibility()">֍</button>
     </header>
     <main class="home-grid">
         <div class="home_1">
                      <h1>Revitalize your business with advertising</h1>
 
                      <img class="logo" src="images/home1.jpg" alt="imagen referent to advertise">
-                    <h3>IS YOUR GOOGLE ANALYTICS, GOOGLE ADS, GOOGLE SHOPPING  NOT WORKING CORRECTLY? ISSO MAY BE A TAGUEAMENTO PROBLEM DO YOUR GOOGLE TAG MANAGER</h3>
+                    <h3>IS YOUR GOOGLE ANALYTICS, GOOGLE ADS, GOOGLE SHOPPING  NOT WORKING CORRECTLY? ISSO MAY BE A TAGGING PROBLEM DO YOUR GOOGLE TAG MANAGER</h3>
                     <p>If there are many errors in the implementation and failure to trigger conversion triggers in the Google Tag Manager tool, a trigger or event that is not properly configured will not be trusted, making your decision as a director more difficult.
 
                         The correct implementation of Google Tag Manager – GTM is essential for your company to have complete data.
@@ -77,7 +78,7 @@
 </main>
 <footer>
         <p>advertise you business © 2023 - Samuel Chacon </p> 
-        <nav> <a href="#contact-us">Contact Us</a>
+        <nav> <a href="#about-us.html">About Us</a>
                 <a href="site-plan.html" target="_blank">Site plan</a>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
@@ -92,6 +93,11 @@
                 </div>
         </nav>
 </footer>
+<link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" class="rigth" target="_blank" href="https://api.whatsapp.com/send?phone=5511933880101&text=Hello">
+  <div class="rwb-tooltip">Whatsapp</div>
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>  
 </div>    
 
 <script>
@@ -108,6 +114,40 @@
         });
     });
 </script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Función para activar/desactivar características de accesibilidad
+      function toggleAccessibility() {
+        // Cambiar la clase del body para activar/desactivar estilos de alto contraste
+        document.body.classList.toggle('highContrast');
+    
+        // Puedes agregar más lógica aquí, dependiendo de las características que quieras activar/desactivar
+        // Por ejemplo, cambiar el tamaño del texto, ajustar espaciado, etc.
+      }
+    
+      // Esta función se llama cuando se carga la página para aplicar el estilo inicial según la configuración del usuario
+      function applyAccessibilityStyles() {
+        const isHighContrast = localStorage.getItem('highContrast') === 'true';
+    
+        if (isHighContrast) {
+          document.body.classList.add('highContrast');
+        }
+      }
+    
+      // También puedes agregar otros eventos o lógica aquí si es necesario
+    
+      // Agrega el evento click al botón después de que se cargue el DOM
+      const contrastButton = document.getElementById('contraste');
+      if (contrastButton) {
+        contrastButton.addEventListener('click', toggleAccessibility);
+      }
+    
+      // Aplica estilos de accesibilidad al cargar la página
+      applyAccessibilityStyles();
+    });
+      
+      </script>
 
 </body>
 </html>
