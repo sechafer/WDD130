@@ -128,7 +128,7 @@
     
       // Esta función se llama cuando se carga la página para aplicar el estilo inicial según la configuración del usuario
       function applyAccessibilityStyles() {
-        const isHighContrast = localStorage.getItem('highContrast') === 'true';
+        const isHighContrast = localStorage.getItem('highContrast') === 'false';
     
         if (isHighContrast) {
           document.body.classList.add('highContrast');
