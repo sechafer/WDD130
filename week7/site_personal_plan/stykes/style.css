@@ -177,7 +177,7 @@ footer a:hover {
 }
 
 #feedback {
-    background-color: #FFF;
+    background-color: var(--accent1-color);
     position: absolute;
     margin-top: 0;
     top: 0;
@@ -503,6 +503,9 @@ body.highContrast li a  {
 
 body.highContrast li   {
     color: #FFF; /* Ajusta el color del texto del enlace en alta contraste */
+}
+body.highConstrast #feedback{
+    color: #000;
 }
 #contraste {
     position: fixed;
