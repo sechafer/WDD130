@@ -411,8 +411,8 @@ body.scrolled #navbar img.logo {
 article.contact-info a.whatsapp-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #25D366; /* Color de fondo del botón de WhatsApp */
-    color: #fff; /* Color del texto del botón de WhatsApp */
+    background-color: #05fb5f; /* Color de fondo del botón de WhatsApp */
+    color: #000; /* Color del texto del botón de WhatsApp */
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
